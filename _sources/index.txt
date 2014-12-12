@@ -16,7 +16,7 @@ alınmıştır.)
 
 * :ref:`search`
 
-* `Ders 2 <conditionals-trCC.rst>`__ *Koşul İfadeleri*
+* `Ders 2 <conditionals-trCC.html>`__ *Koşul İfadeleri*
 
 .. toctree::
     :maxdepth: 1
