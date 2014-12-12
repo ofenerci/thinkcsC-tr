@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>5. Koşul İfadeleri &mdash; How to Think Like a Computer Scientist: Learning with Python 3</title>
+    <title>Koşul İfadeleri &mdash; How to Think Like a Computer Scientist: Learning with Python 3</title>
     
     <link rel="stylesheet" href="_static/style.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -23,24 +23,17 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="How to Think Like a Computer Scientist: Learning with Python 3" href="index.html" />
-    <link rel="next" title="6. Ürün veren fonksiyonlar" href="fruitful_functions-tr.html" />
-    <link rel="prev" title="4. Functions" href="functions-tr.html" /> 
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="/usr/share/javascript/mathjax/MathJax.js?config=default"></script>
+    <link rel="top" title="How to Think Like a Computer Scientist: Learning with Python 3" href="index.html" /> 
   </head>
   <body>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>Gezinti</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="fruitful_functions-tr.html" title="6. Ürün veren fonksiyonlar"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="functions-tr.html" title="4. Functions"
-             accesskey="P">previous</a> |</li>
+          <a href="genindex.html" title="Genel Dizin"
+             accesskey="I">dizin</a></li>
         <li><a href="index.html">How to Think Like a Computer Scientist: Learning with Python 3</a> &raquo;</li> 
       </ul>
     </div>
@@ -53,12 +46,12 @@
 <div class="line"><br /></div>
 </div>
 <div class="section" id="kosul-ifadeleri">
-<h1>5. Koşul İfadeleri<a class="headerlink" href="#kosul-ifadeleri" title="Permalink to this headline">¶</a></h1>
+<h1>Koşul İfadeleri<a class="headerlink" href="#kosul-ifadeleri" title="Bu başlığın kalıcı bağlantısı">¶</a></h1>
 <p>Koşul ifadelerinin kullanımı programları ilginç hale getirir. Programın
 davranışını, bu sınamaların sonucuna göre değiştirebiliriz. Bu bölümün konusu
 işte budur.</p>
 <div class="section" id="boolean-degerler-ve-ifadeleri">
-<span id="index-0"></span><h2>5.1. Boolean değerler ve ifadeleri<a class="headerlink" href="#boolean-degerler-ve-ifadeleri" title="Permalink to this headline">¶</a></h2>
+<span id="index-0"></span><h2>Boolean değerler ve ifadeleri<a class="headerlink" href="#boolean-degerler-ve-ifadeleri" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p><em>Boolean</em>, doğru ya da yanlış değere sahiptir. Bu isim Boolean Cebrini yaratan
 İngiliz matematikçi George Boole&#8217;dan dolayı verilmiştir. Bu cebir, bu değerleri
 birleştirme ve bu değerler üzerinden mantık yürütmek için bazı kurallarla
@@ -70,6 +63,9 @@ tipine <strong>bool</strong> adı verilir.</p>
 <div><div class="highlight-python3"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
 <span class="go">&lt;class &#39;bool&#39;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">true</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;interactive input&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">NameError</span>: <span class="n">name &#39;true&#39; is not defined</span>
 <span class="gt">Traceback (most recent call last):</span>
   File <span class="nb">&quot;&lt;interactive input&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
 <span class="gr">NameError</span>: <span class="n">name &#39;true&#39; is not defined</span>
@@ -120,7 +116,7 @@ ekrana basılabilir, vb.</p>
 </div></blockquote>
 </div>
 <div class="section" id="mantiksal-islecler">
-<span id="index-1"></span><h2>5.2. Mantıksal işleçler<a class="headerlink" href="#mantiksal-islecler" title="Permalink to this headline">¶</a></h2>
+<span id="index-1"></span><h2>Mantıksal işleçler<a class="headerlink" href="#mantiksal-islecler" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Üç adet <strong>mantıksal işleç</strong> vardır: <tt class="docutils literal"><span class="pre">and</span></tt> (ve), <tt class="docutils literal"><span class="pre">or</span></tt> (veya) ve <tt class="docutils literal"><span class="pre">not</span></tt>
 (değil). Bu basit Boolean deyimlerini kullanarak, daha karmaşık <tt class="docutils literal"><span class="pre">Boolean</span></tt>
 ifadeleri üretebiliriz. Bu işleçlerin anlamları, parantez içinde yazılmış olan
@@ -138,7 +134,7 @@ veriyorsa Python sol taraftaki değeri hesaplamaz.</p>
 <p>Böylece gereksiz hesaplamalar dikkate alınmaz.</p>
 </div>
 <div class="section" id="dogruluk-tablolari">
-<h2>5.3. Doğruluk Tabloları<a class="headerlink" href="#dogruluk-tablolari" title="Permalink to this headline">¶</a></h2>
+<h2>Doğruluk Tabloları<a class="headerlink" href="#dogruluk-tablolari" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Doğrululuk tabloları, bütün muhtemel giriş değerleri üzerine mantıksal işleçleri
 uyguyarak çıktıları listelememize imkan verir. <tt class="docutils literal"><span class="pre">and</span></tt> ve <tt class="docutils literal"><span class="pre">or</span></tt> işleçleri
 yalnızca iki işlenen üzerine etkilediğinden, <tt class="docutils literal"><span class="pre">and</span></tt> işlecinin sonucunu veren
@@ -255,7 +251,7 @@ değeri alır. Bu yüzden doğruluk tablosu yalnızca iki satıra sahiptir.</p>
 </div></blockquote>
 </div>
 <div class="section" id="boolean-ifadelerinin-basitlestirilmesi">
-<h2>5.4. Boolean İfadelerinin basitleştirilmesi<a class="headerlink" href="#boolean-ifadelerinin-basitlestirilmesi" title="Permalink to this headline">¶</a></h2>
+<h2>Boolean İfadelerinin basitleştirilmesi<a class="headerlink" href="#boolean-ifadelerinin-basitlestirilmesi" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>İfadeleri basitleştirme ve yeniden düzenlemek için bir takım kurallara <em>cebir</em>
 denir. Örneğin, okulda gördüğümüz cebir kuralları ile tanışığız. Örneğin:</p>
 <blockquote>
@@ -295,7 +291,7 @@ değerleri ile çalışmamız için kuralları  belirler.</p>
 </div></blockquote>
 <span class="target" id="index-2"></span></div>
 <div class="section" id="kosullu-yurutme">
-<span id="index-3"></span><h2>5.5. Koşullu yürütme<a class="headerlink" href="#kosullu-yurutme" title="Permalink to this headline">¶</a></h2>
+<span id="index-3"></span><h2>Koşullu yürütme<a class="headerlink" href="#kosullu-yurutme" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Yararlı programlar yazabilmek için, neredeyse her zaman koşulları sınamamız ve
 programın davranışlarını bu sınamaların sonucuna göre değiştirebilmemiz gerekir.
 <strong>Koşul deyimleri</strong> bize bu yeteneği kazandırır. En basit örneği <strong>if</strong>
@@ -366,7 +362,7 @@ kullanabilirsiniz.</p>
 </div></blockquote>
 </div>
 <div class="section" id="else-cumlecigini-ihmal-etme">
-<span id="index-4"></span><h2>5.6. <tt class="docutils literal"><span class="pre">else</span></tt> cümleciğini ihmal etme<a class="headerlink" href="#else-cumlecigini-ihmal-etme" title="Permalink to this headline">¶</a></h2>
+<span id="index-4"></span><h2><tt class="docutils literal"><span class="pre">else</span></tt> cümleciğini ihmal etme<a class="headerlink" href="#else-cumlecigini-ihmal-etme" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <div class="admonition-flowchart-of-an-if-statement-with-no-else-clause admonition">
 <p class="first admonition-title">Flowchart of an if statement with no else clause</p>
 <img alt="_images/flowchart_if_only.png" class="last" src="_images/flowchart_if_only.png" />
@@ -406,7 +402,7 @@ sahiptir. Bunlardan biri seçmeli <tt class="docutils literal"><span class="pre"
 </div>
 </div>
 <div class="section" id="zincirleme-kosul-ifadeler">
-<span id="index-5"></span><h2>5.7. Zincirleme koşul ifadeler<a class="headerlink" href="#zincirleme-kosul-ifadeler" title="Permalink to this headline">¶</a></h2>
+<span id="index-5"></span><h2>Zincirleme koşul ifadeler<a class="headerlink" href="#zincirleme-kosul-ifadeler" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Bazen ikiden fazla olasılık vardır ve iki dallanmadan fazlasına gereksinim
 duyarız. Bunun gibi bir hesaplamayı ifade etmek için <strong>zincirleme koşul
 ifadelerini</strong> kullanırız:</p>
@@ -458,7 +454,7 @@ deyimin işlevi biter. Eğer birden fazla koşul doğru olsa bile, sadece ilk
 karşılaşılan doğru dal çalışır.</p>
 </div>
 <div class="section" id="icice-kosullar">
-<span id="index-6"></span><h2>5.8. İçiçe koşullar<a class="headerlink" href="#icice-kosullar" title="Permalink to this headline">¶</a></h2>
+<span id="index-6"></span><h2>İçiçe koşullar<a class="headerlink" href="#icice-kosullar" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Bir koşul deyimi bir başka koşul deyimiyle içiçe olabilir. Bir önceki örneği
 aşağıdaki gibi yazabildik:</p>
 <div class="admonition-bu-icice-kosulun-akis-diyagrami admonition">
@@ -511,7 +507,7 @@ koşul deyimi oluşturabiliriz. Tek bir <tt class="docutils literal"><span class
 </div></blockquote>
 </div>
 <div class="section" id="geri-donus-deyimi">
-<span id="index-7"></span><h2>5.9. Geri dönüş deyimi<a class="headerlink" href="#geri-donus-deyimi" title="Permalink to this headline">¶</a></h2>
+<span id="index-7"></span><h2>Geri dönüş deyimi<a class="headerlink" href="#geri-donus-deyimi" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Bir <tt class="docutils literal"><span class="pre">return</span></tt> deyimi bir fonksiyonun sona ulaşmadan bitirilmesini sağlar.
 <tt class="docutils literal"><span class="pre">return</span></tt> deyimini fonksiyon içinde erken kullanmamızın nedeni bir hata
 durumuyla karşılaşmamız olabilir.</p>
@@ -538,7 +534,7 @@ ekrana basar ve <tt class="docutils literal"><span class="pre">return</span></tt
 çağıran yere geri döner ve fonksiyonun geri kalan satırları çalıştırmaz.</p>
 </div>
 <div class="section" id="mantiksal-isleclerin-karsitlari">
-<h2>5.10. Mantıksal işleçlerin karşıtları<a class="headerlink" href="#mantiksal-isleclerin-karsitlari" title="Permalink to this headline">¶</a></h2>
+<h2>Mantıksal işleçlerin karşıtları<a class="headerlink" href="#mantiksal-isleclerin-karsitlari" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>altı bağlantı işleçinin her birinin manktıksal karşıtı (zıttı) vardır. Örneğin,
 yaşınız 18 veya 18&#8217;den daha büyük ise ehliyet alabileceğinizi, 18&#8217;den küçük ise
 ehliyet alamıyacağınızı varsayalım.</p>
@@ -661,7 +657,7 @@ basitleştirebilir miyiz?</p>
 </div>
 </div>
 <div class="section" id="tip-donusumu">
-<span id="index-8"></span><h2>5.11. Tip dönüşümü<a class="headerlink" href="#tip-donusumu" title="Permalink to this headline">¶</a></h2>
+<span id="index-8"></span><h2>Tip dönüşümü<a class="headerlink" href="#tip-donusumu" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Bu konuya daha önceki konularda değinmiş olmalıydık. Burda işlemenin bir zararı
 olmayacaktır!</p>
 <p>Bir değişken tipini kendi tip değişkenine çevirmeye yarayan Python&#8217;da yerleşik
@@ -720,6 +716,9 @@ temsil edilmeliridir.</p>
 <span class="gt">Traceback (most recent call last):</span>
   File <span class="nb">&quot;&lt;interactive input&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
 <span class="gr">NameError</span>: <span class="n">name &#39;true&#39; is not defined</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;interactive input&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">NameError</span>: <span class="n">name &#39;true&#39; is not defined</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -728,7 +727,7 @@ Daha önce de bahsedildiği gibi <tt class="docutils literal"><span class="pre">
 herhangi bir değişkendir ve burda tanımlanmamıştır. Bu yüzden hata alırız.</p>
 </div>
 <div class="section" id="kamplumbaga-cubuk-grafikleri">
-<span id="index-9"></span><h2>5.12. Kamplumbağa Çubuk Grafikleri<a class="headerlink" href="#kamplumbaga-cubuk-grafikleri" title="Permalink to this headline">¶</a></h2>
+<span id="index-9"></span><h2>Kamplumbağa Çubuk Grafikleri<a class="headerlink" href="#kamplumbaga-cubuk-grafikleri" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Şimdi göreceğimiz kamplumbağa daha önce gördüklerimize göre daha çok güce sahip
 olacaktır. Bununla ilgili dökümanlara <a class="reference external" href="http://docs.python.org/py3k/library/turtle.html">http://docs.python.org/py3k/library/turtle.html</a>
 adresinden veya PyScripter&#8217;in içindeki <em>Help</em> menüsünden turtle modülünü
@@ -874,7 +873,7 @@ arasında boşluk bırakırken kalemi kaldırmamız gerekecektir. Bunu size alı
 olarak bırakıyoruz.</p>
 </div>
 <div class="section" id="sozluk">
-<h2>5.13. Sözlük<a class="headerlink" href="#sozluk" title="Permalink to this headline">¶</a></h2>
+<h2>Sözlük<a class="headerlink" href="#sozluk" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <dl class="glossary docutils">
 <dt id="term-block">block</dt>
 <dd>Aynı girintiye sahip ardışık deyimler grubudur.</dd>
@@ -926,7 +925,7 @@ artar.</dd>
 </dl>
 </div>
 <div class="section" id="alistirmalar">
-<h2>5.14. Alıştırmalar<a class="headerlink" href="#alistirmalar" title="Permalink to this headline">¶</a></h2>
+<h2>Alıştırmalar<a class="headerlink" href="#alistirmalar" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Pazardan Cumartesine kadar bir haftanın  günlerinin 0,1,2,3,4,5,6 olarak
 sayılandırıldığını varsayın. Verilen sayıya karşılık gelen günü geri döndüren
@@ -1127,23 +1126,17 @@ yüzden küçük hatalar yavaşça hesaplamalara girer. Aşağıdaki betiği den
       <div class="clearer"></div>
     </div>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>Gezinti</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="fruitful_functions-tr.html" title="6. Ürün veren fonksiyonlar"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="functions-tr.html" title="4. Functions"
-             >previous</a> |</li>
+          <a href="genindex.html" title="Genel Dizin"
+             >dizin</a></li>
         <li><a href="index.html">How to Think Like a Computer Scientist: Learning with Python 3</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2012, Name prefix for templates and static dir [_].
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+      <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2 ile oluşturulmuştur.
     </div>
   </body>
 </html>

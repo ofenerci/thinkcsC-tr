@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Koşul İfadeleri &mdash; How to Think Like a Computer Scientist: Learning with Python 3</title>
+    
+    <link rel="stylesheet" href="_static/style.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '3rd Edition',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="/usr/share/javascript/mathjax/MathJax.js?config=default"></script>
+    <link rel="top" title="How to Think Like a Computer Scientist: Learning with Python 3" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Gezinti</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Genel Dizin"
+             accesskey="I">dizin</a></li>
+        <li><a href="index.html">How to Think Like a Computer Scientist: Learning with Python 3</a> &raquo;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body">
+            
+  <div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="kosul-ifadeleri">
+<h1>Koşul İfadeleri<a class="headerlink" href="#kosul-ifadeleri" title="Bu başlığın kalıcı bağlantısı">¶</a></h1>
+<p>Faydalı programlar yazabilmesi için bazı bazı koşulları test etmemiz ve buna
+göre programın akışını değiştirmemiz gererkir. <strong>Koşul ifadeleri</strong> bize bu
+imkanı verir. En basit if deyimi:</p>
+<blockquote>
+<div><div class="highlight-c"><div class="highlight"><pre><span class="cp">#include &lt;stdio.h&gt;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Merhaba  Dünya!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Parantez içindeki ifade &#8220;koşul&#8221; olarak adlandırılır. Eğer bu ifade doğru ise,
+süslü parantez içindeki deyimler çalıştırılır. Eğer doğru değil ise hiç bir şey
+olmaz.</p>
+<p>Koşul, aşağıdaki karşılaştırma işlemcilerinden herhangi biri olabilir:</p>
+<blockquote>
+<div><div class="highlight-c"><div class="highlight"><pre>x == y               # Eğer x, y&#39;ye eşit ise 1 değeri üretir.
+x != y               # x, y&#39;ye eşit değil ise 0 değeri üretir.
+x &gt; y                # x, y&#39;den büyük ise 1 değeri üretir.
+x &lt; y                # x, y&#39;den küçük ise 1 değeri üretir.
+x &gt;= y               # x, y&#39;den büyük veya eşit ise 1 değeri üretir.
+x &lt;= y               # x, y&#39;den küçük veya eşit ise 1 değeri üretir.
+</pre></div>
+</div>
+</div></blockquote>
+<p>Bu ifadeler size matematikten işleçlerini hatırlatsa bile, C&#8217;nin sözdizimi <span class="math">\(=\)</span>,
+<span class="math">\(&lt;=\)</span>, <span class="math">\(\neq\)</span> gibi simgelerden farklıdır. Genel olarak yapılan hatalardan biri
+çift <span class="math">\(==\)</span> yerine tek  <span class="math">\(=\)</span> kullanmaktır. Unutmayınız ki, <span class="math">\(=\)</span> bir atama işlemcisi,
+fakat <span class="math">\(==\)</span> ise bir karşılaştırma işlemcisidir.</p>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Gezinti</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="Genel Dizin"
+             >dizin</a></li>
+        <li><a href="index.html">How to Think Like a Computer Scientist: Learning with Python 3</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Name prefix for templates and static dir [_].
+      <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2 ile oluşturulmuştur.
+    </div>
+  </body>
+</html>

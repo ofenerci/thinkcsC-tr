@@ -1,0 +1,73 @@
+..  Copyright (C)  Peter Wentworth, Jeffrey Elkner, Allen B. Downey and Chris Meyers.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with Invariant Sections being Foreword, Preface, and Contributor List, no
+    Front-Cover Texts, and no Back-Cover Texts.  A copy of the license is
+    included in the section entitled "GNU Free Documentation License".
+
+|    
+
+Koşul İfadeleri
+===============
+
+Faydalı programlar yazabilmesi için bazı bazı koşulları test etmemiz ve buna
+göre programın akışını değiştirmemiz gererkir. **Koşul ifadeleri** bize bu
+imkanı verir. En basit if deyimi: 
+
+   .. sourcecode:: c
+
+    #include <stdio.h>
+
+    int main()
+    {
+        int a = 1;
+        if (a == 1)
+        {
+            printf("Merhaba  Dünya!\n");
+        }
+    return 0;
+    }
+
+Parantez içindeki ifade "koşul" olarak adlandırılır. Eğer bu ifade doğru ise,
+süslü parantez içindeki deyimler çalıştırılır. Eğer doğru değil ise hiç bir şey
+olmaz.
+
+Koşul, aşağıdaki karşılaştırma işlemcilerinden herhangi biri olabilir:
+
+    .. sourcecode:: c
+        
+        x == y               # Eğer x, y'ye eşit ise 1 değeri üretir.
+        x != y               # x, y'ye eşit değil ise 0 değeri üretir.
+        x > y                # x, y'den büyük ise 1 değeri üretir.
+        x < y                # x, y'den küçük ise 1 değeri üretir.
+        x >= y               # x, y'den büyük veya eşit ise 1 değeri üretir.
+        x <= y               # x, y'den küçük veya eşit ise 1 değeri üretir.
+
+Bu ifadeler size matematikten işleçlerini hatırlatsa bile, C'nin sözdizimi $=$,
+$<=$, $\neq$ gibi simgelerden farklıdır. Genel olarak yapılan hatalardan biri
+çift $==$ yerine tek  $=$ kullanmaktır. Unutmayınız ki, $=$ bir atama işlemcisi,
+fakat :math:`==` ise bir karşılaştırma işlemcisidir.
+
+
+  
+
+
+        
+
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+

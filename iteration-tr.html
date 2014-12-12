@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>7. Yineleme (Tekrarlamalı) &mdash; How to Think Like a Computer Scientist: Learning with Python 3</title>
+    <title>Yineleme (Tekrarlamalı) &mdash; How to Think Like a Computer Scientist: Learning with Python 3</title>
     
     <link rel="stylesheet" href="_static/style.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -23,20 +23,17 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="How to Think Like a Computer Scientist: Learning with Python 3" href="index.html" />
-    <link rel="prev" title="6. Ürün veren fonksiyonlar" href="fruitful_functions-tr.html" /> 
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <script type="text/javascript" src="/usr/share/javascript/mathjax/MathJax.js?config=default"></script>
+    <link rel="top" title="How to Think Like a Computer Scientist: Learning with Python 3" href="index.html" /> 
   </head>
   <body>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>Gezinti</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="fruitful_functions-tr.html" title="6. Ürün veren fonksiyonlar"
-             accesskey="P">previous</a> |</li>
+          <a href="genindex.html" title="Genel Dizin"
+             accesskey="I">dizin</a></li>
         <li><a href="index.html">How to Think Like a Computer Scientist: Learning with Python 3</a> &raquo;</li> 
       </ul>
     </div>
@@ -49,7 +46,7 @@
 <div class="line"><br /></div>
 </div>
 <div class="section" id="yineleme-tekrarlamali">
-<h1>7. Yineleme (Tekrarlamalı)<a class="headerlink" href="#yineleme-tekrarlamali" title="Permalink to this headline">¶</a></h1>
+<h1>Yineleme (Tekrarlamalı)<a class="headerlink" href="#yineleme-tekrarlamali" title="Bu başlığın kalıcı bağlantısı">¶</a></h1>
 <span class="target" id="index-0"></span><p id="index-1">Bilgisayarlar sıklıkla tekrarlayan görevleri otomatikleştirmek için
 kullanılmaktadır. Aynı veya benzer görevleri hatasız bir şekilde tekrarlama
 işlemi bilgisayarların iyi yaptığı, insanların ise zorlandığı bir şeydir.</p>
@@ -61,7 +58,7 @@ gördük. <tt class="docutils literal"><span class="pre">for</span></tt> deyimi 
 başka değişik yoludur.</p>
 <p>Bu konuya girmeden önce, birkaç fikirin üstünden yeniden geçelim.</p>
 <div class="section" id="atama">
-<h2>7.1. Atama<a class="headerlink" href="#atama" title="Permalink to this headline">¶</a></h2>
+<h2>Atama<a class="headerlink" href="#atama" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Daha önce bahsettiğimiz üzere, aynı değişkene birden fazla atama yapılması
 geçerli bir yöntemdir. Yeni bir atama varolan değişkeninin yeni bir değeri
 temsil etmesini sağlar ( ve önceki eski değerin temsilliyetini ortadan
@@ -117,7 +114,7 @@ terimbilimini ve işaretleri kullanır. <tt class="docutils literal"><span class
 işaretini ise eşitlik için kullanır.</p>
 </div>
 <div class="section" id="degiskenleri-guncellemez">
-<h2>7.2. Değişkenleri güncellemez<a class="headerlink" href="#degiskenleri-guncellemez" title="Permalink to this headline">¶</a></h2>
+<h2>Değişkenleri güncellemez<a class="headerlink" href="#degiskenleri-guncellemez" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Bir atama komutu yürütüldüğünde, ilk önce sağ taraftakı ifade hesaplanır (
 yani atama işaretinden sonra gelen ifade.) Bu bir değer üretir. Sonrasında ise
 sol taraftaki değişkenin yeni değeri temsil edecek şekilde ataması yapılır.</p>
@@ -142,6 +139,9 @@ oluşur:</p>
 <span class="gt">Traceback (most recent call last):</span>
 <span class="gr">  File &quot;&lt;interactive input&gt;&quot;, line 1, in</span>
 <span class="gr">NameError</span>: <span class="n">name &#39;x&#39; is not defined</span>
+<span class="gt">Traceback (most recent call last):</span>
+<span class="gr">  File &quot;&lt;interactive input&gt;&quot;, line 1, in</span>
+<span class="gr">NameError</span>: <span class="n">name &#39;x&#39; is not defined</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -163,7 +163,7 @@ Programcılar bazen buna değişkene  <em>toslama</em> (bumping variable) olarak
 bahsetmektedirler. Bu değişkenini 1 arttırılması ile aynı anlama gelir.</p>
 </div>
 <div class="section" id="for-dongusunu-tekrar-gozden-gecirme">
-<span id="index-2"></span><h2>7.3. <tt class="docutils literal"><span class="pre">for</span></tt> döngüsünü tekrar gözden geçirme<a class="headerlink" href="#for-dongusunu-tekrar-gozden-gecirme" title="Permalink to this headline">¶</a></h2>
+<span id="index-2"></span><h2><tt class="docutils literal"><span class="pre">for</span></tt> döngüsünü tekrar gözden geçirme<a class="headerlink" href="#for-dongusunu-tekrar-gozden-gecirme" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p><tt class="docutils literal"><span class="pre">for</span></tt> döngüsünün listenin içindeki öğeler   üzerinden döngü yaptığını
 hatırlayınız. Listenin içindeki eleman sırasıyla döngü değişkenine yeniden
 atanır ve döngünün içindeki gövde çalıştırılır.</p>
@@ -224,7 +224,7 @@ güncelleştirmeliyiz.</p>
 </div></blockquote>
 </div>
 <div class="section" id="while-deyimi">
-<span id="index-3"></span><h2>7.4. While deyimi<a class="headerlink" href="#while-deyimi" title="Permalink to this headline">¶</a></h2>
+<span id="index-3"></span><h2>While deyimi<a class="headerlink" href="#while-deyimi" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Aşağıdaki kod parçası <tt class="docutils literal"><span class="pre">while</span></tt> deyiminin kullanışını gösterir:</p>
 <blockquote>
 <div><div class="highlight-python3"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
@@ -304,7 +304,7 @@ fakat bu değeri dışarda tutarak bir liste oluşturur.  Daha önceki bölümde
 yaptığımız hatayı yakalabilirdik.</p>
 </div>
 <div class="section" id="collatz-in-3n-1-dizisi">
-<span id="index-4"></span><h2>7.5. Collatz&#8217;ın 3n+1 dizisi<a class="headerlink" href="#collatz-in-3n-1-dizisi" title="Permalink to this headline">¶</a></h2>
+<span id="index-4"></span><h2>Collatz&#8217;ın 3n+1 dizisi<a class="headerlink" href="#collatz-in-3n-1-dizisi" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Matematikçileri yıllarca yanılgaya düşüren ve kendine hayran bırakan basit bir diziye
 bakalım. Matematikçiler  bu dizi hakkındaki basit soruları bile
 hala cevaplıyamamaktır.</p>
@@ -404,7 +404,7 @@ yineleme</strong> ise: Kaç tane yinelem olacağı hakkında emin değiliz; hatt
 </div>
 </div>
 <div class="section" id="programi-izlemek">
-<span id="index-5"></span><h2>7.6. Programı izlemek<a class="headerlink" href="#programi-izlemek" title="Permalink to this headline">¶</a></h2>
+<span id="index-5"></span><h2>Programı izlemek<a class="headerlink" href="#programi-izlemek" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Etkili bilgisayar programları yazabilmek ve programın çalışma modeli hakkında kavramsal bilgi oluşturabilmek için, bir programcının bilgisayar programlarının yürütmesini <strong>izleme</strong> yeteneğini geliştirmesini gereklidir. İzleme, bir bilgisayar olmayı ve bir örnek programın çalışması sırasında yürütme akışını takip etmeyi gerektirir. Bu takip, herbir komutun çalıştırılmasından sonra bütün değişkenlerin durumunu ve programın ürettiği herhangi bir çıktıyı kaydetmeyi gerektirir.</p>
 <p>Bu süreci anlamak için, önceki kısımdaki <cite>Collatz_dizisi(3)`</cite> çağrımını
 izleyelim. İzlemenin başında <tt class="docutils literal"><span class="pre">n</span></tt> (parametre) adında 3 ilk değerine sahip bir
@@ -461,7 +461,7 @@ bir dizinin içinde nasıl saklayacağımızı göstereceğiz. Böylece fonksiyo
 ortasında gereksiz şekilde ortaya çıkıp düşünce yapımızı sekteye uğratan  sinir bozucu <tt class="docutils literal"><span class="pre">print</span></tt> fonksiyonlarını kaldırabileceğiz.</p>
 </div>
 <div class="section" id="basamaklari-sayma">
-<span id="sayma"></span><h2>7.7. Basamakları sayma<a class="headerlink" href="#basamaklari-sayma" title="Permalink to this headline">¶</a></h2>
+<span id="sayma"></span><h2>Basamakları sayma<a class="headerlink" href="#basamaklari-sayma" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Aşağıdakı fonksiyon bir tam sayının içindeki rakamları (basamakları) sayar:</p>
 <blockquote>
 <div><div class="highlight-python3"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -510,7 +510,7 @@ bir koşul cümlesi koymamız işe yarardı.</p>
 <p><cite>sifir_ve_besleri_say(1055030250)</cite> ifadesinin 7 döndürdüğünü doğrulayın.</p>
 </div>
 <div class="section" id="kisaltilmis-atama">
-<h2>7.8. Kısaltılmış atama<a class="headerlink" href="#kisaltilmis-atama" title="Permalink to this headline">¶</a></h2>
+<h2>Kısaltılmış atama<a class="headerlink" href="#kisaltilmis-atama" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Bir değişkeni arttırma sık karşılaşılan bir şeydir. Python bunun için bır
 kısaltma sağlar:</p>
 <blockquote>
@@ -556,7 +556,7 @@ vardır:</p>
 </div></blockquote>
 </div>
 <div class="section" id="python-da-yardim-ve-meta-simge-meta-notation">
-<span id="index-6"></span><h2>7.9. Python&#8217;da yardım ve meta-simge (meta-notation)<a class="headerlink" href="#python-da-yardim-ve-meta-simge-meta-notation" title="Permalink to this headline">¶</a></h2>
+<span id="index-6"></span><h2>Python&#8217;da yardım ve meta-simge (meta-notation)<a class="headerlink" href="#python-da-yardim-ve-meta-simge-meta-notation" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Python,  kendi içinde tanımlanmış fonksiyonları (gömülü fonksiyonları)  ve kütüphaneleri için oldukça geniş bir
 belgeye sahiptir. Bu yardım belgelerine ulaşmanın farklı yolları vardır.
 PyScripter içinde, <em>Help</em> menü öğesine tıklayın ve <em>Python Manuals</em>&#8216;i seçin.
@@ -591,7 +591,7 @@ virgül ile ayrılmış istediğiniz kadar nesne (isterseniz hiç) koyabilirsini
 olanak verir.</p>
 </div>
 <div class="section" id="tablolar">
-<span id="index-7"></span><h2>7.10. Tablolar<a class="headerlink" href="#tablolar" title="Permalink to this headline">¶</a></h2>
+<span id="index-7"></span><h2>Tablolar<a class="headerlink" href="#tablolar" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Döngülerle ilgili güzel şeylerden biri tablo biçiminde veri üretmede yararlı
 olmasıdır. Bilgisayarlar yokken logaritma, sinüs, cosinüs ve diğer matematiksel
 fonksıyonların değerlerini insanlar el ile hesaplamak zorundaydı. Bu işi
@@ -652,7 +652,7 @@ Daha önceki programın çıktısında olduğu gibi, sekmeler metinleri sutünla
 sütundaki sayıların basamak sayısına bağlı değildir.</p>
 </div>
 <div class="section" id="iki-boyutlu-tablolar">
-<span id="index-8"></span><h2>7.11. İki Boyutlu Tablolar<a class="headerlink" href="#iki-boyutlu-tablolar" title="Permalink to this headline">¶</a></h2>
+<span id="index-8"></span><h2>İki Boyutlu Tablolar<a class="headerlink" href="#iki-boyutlu-tablolar" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>İki boyutlu bir tablo, satır ve sütun kesişimindeki değeri okuduğunuz bir
 tablodur. Çarpın tablosu buna iyi bir  örnektir. 1&#8217;den 6&#8217;ya kadar çarpım
 tablosunu yazmak istediğinizi varsayalım.</p>
@@ -680,7 +680,7 @@ bütün öğeleri <tt class="docutils literal"><span class="pre">i</span></tt>&#
 <strong>genelleştirme (generalize)</strong>dır.</p>
 </div>
 <div class="section" id="sarmalama-ve-genellestirme">
-<span id="index-9"></span><h2>7.12. Sarmalama ve genelleştirme<a class="headerlink" href="#sarmalama-ve-genellestirme" title="Permalink to this headline">¶</a></h2>
+<span id="index-9"></span><h2>Sarmalama ve genelleştirme<a class="headerlink" href="#sarmalama-ve-genellestirme" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Sarmalama (encapsulation) bir kod parçasını fonksiyon içerisine koymadır.
 Böylece fonksiyonlar tarafından sağlanan tüm avantajlardan yararlanmamazı
 sağlar. Daha önce sarmalama ile örnekler gördünüz; daha önceki bölümdeki
@@ -742,7 +742,7 @@ benzediğini dikkat edin. Yaptığımız tek şey <tt class="docutils literal"><
 </div></blockquote>
 </div>
 <div class="section" id="daha-fazla-sarmalama">
-<span id="index-10"></span><h2>7.13. Daha fazla sarmalama<a class="headerlink" href="#daha-fazla-sarmalama" title="Permalink to this headline">¶</a></h2>
+<span id="index-10"></span><h2>Daha fazla sarmalama<a class="headerlink" href="#daha-fazla-sarmalama" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Sarmalamayı tekrar göstermek için en son kısımdan kodu alalım ve onu bir
 fonksiyon şekline getirelim:</p>
 <blockquote>
@@ -763,7 +763,7 @@ bilmiyorsanız oldukça yararlıdır. Bu yaklaşım siz ilerledikçe programı
 tasarlamanıza izin verir.</p>
 </div>
 <div class="section" id="yerel-degisken">
-<span id="index-11"></span><h2>7.14. Yerel Değişken<a class="headerlink" href="#yerel-degisken" title="Permalink to this headline">¶</a></h2>
+<span id="index-11"></span><h2>Yerel Değişken<a class="headerlink" href="#yerel-degisken" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Aynı değişken <tt class="docutils literal"><span class="pre">i</span></tt>&#8216;yi hem <tt class="docutils literal"><span class="pre">katlari_bas</span></tt> hem de <tt class="docutils literal"><span class="pre">carpim_tablosu_bas</span></tt>
 fonksiyonlarının ikisinde de nasıl kullanabildiğimizi merak ediyor
 olabilirsiniz. Bu fonksiyonlardan biri <tt class="docutils literal"><span class="pre">i</span></tt>&#8216;nin değerini değiştirirse bu
@@ -796,7 +796,7 @@ iki yerde değişken olarak kullanılan <tt class="docutils literal"><span class
 ve birbirinden bağımsız değerler aldığını göstermektedir.</p>
 </div>
 <div class="section" id="break-deyimi">
-<span id="index-12"></span><h2>7.15. <tt class="docutils literal"><span class="pre">break</span></tt> deyimi<a class="headerlink" href="#break-deyimi" title="Permalink to this headline">¶</a></h2>
+<span id="index-12"></span><h2><tt class="docutils literal"><span class="pre">break</span></tt> deyimi<a class="headerlink" href="#break-deyimi" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p><strong>break</strong> deyimi bir döngünün gövdesini terketmek için kullanılır. Döngü
 terkedildiğinde gövdeden sonra ilk deyim yürütülür.</p>
 <blockquote>
@@ -826,7 +826,7 @@ denir. Çünkü sınama gövde öncesinde yapılır.</p>
 </div>
 </div>
 <div class="section" id="dongulerin-baska-turlu-kullanimi">
-<h2>7.16. Döngülerin başka türlü kullanımı<a class="headerlink" href="#dongulerin-baska-turlu-kullanimi" title="Permalink to this headline">¶</a></h2>
+<h2>Döngülerin başka türlü kullanımı<a class="headerlink" href="#dongulerin-baska-turlu-kullanimi" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Bazen döngünün yürütülmesi sırasında <strong>gövde ortasında sınama</strong> yaparak gövdenin sonunda veya
 başında değil, yürütmenin ortasında gövdeden çıkmak isteriz. Veya gövdenin
 <strong>gövde sonunda sınama</strong> yaparak gövdeden çıkış sağlar. Başka diller bunlar için farklı söz dizimi
@@ -903,7 +903,7 @@ kalmadığına emin olmalıdır.</p>
 </div>
 </div>
 <div class="section" id="ornek">
-<h2>7.17. Örnek<a class="headerlink" href="#ornek" title="Permalink to this headline">¶</a></h2>
+<h2>Örnek<a class="headerlink" href="#ornek" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Aşağıdaki program aşağıdaki tahmin etme oyununu uygular:</p>
 <blockquote>
 <div><div class="highlight-python3"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
@@ -960,7 +960,7 @@ numarayı (kurnazlığı) yaparlar.</p>
 </div></blockquote>
 </div>
 <div class="section" id="continue-devam-deyimi">
-<span id="index-13"></span><h2>7.18. <tt class="docutils literal"><span class="pre">Continue</span> <span class="pre">(devam)</span></tt> deyimi<a class="headerlink" href="#continue-devam-deyimi" title="Permalink to this headline">¶</a></h2>
+<span id="index-13"></span><h2><tt class="docutils literal"><span class="pre">Continue</span> <span class="pre">(devam)</span></tt> deyimi<a class="headerlink" href="#continue-devam-deyimi" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Bu bir kontrol akış deyimidir; döngünün o anki adımını bitirir ama döngüye devam
 eder. Fakat döngü geri kalan yinelemelerine devam eder.</p>
 <blockquote>
@@ -988,7 +988,7 @@ eder. Fakat döngü geri kalan yinelemelerine devam eder.</p>
 </div></blockquote>
 </div>
 <div class="section" id="daha-fazla-genellestirme">
-<h2>7.19. Daha fazla genelleştirme<a class="headerlink" href="#daha-fazla-genellestirme" title="Permalink to this headline">¶</a></h2>
+<h2>Daha fazla genelleştirme<a class="headerlink" href="#daha-fazla-genellestirme" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Genelleştirmeye başka bir örnek olarak, yalnız sadece altıya altı çarpım tablosu
 değil; herhangi bir boyutta bir çarpım tablosunu bastırmak istediğimizi
 varsayalım. <tt class="docutils literal"><span class="pre">carpim_tablosu_bas</span></tt> fonksiyonuna bir parametre eklemeniz gerecekti.</p>
@@ -1084,7 +1084,7 @@ satır değiştirmeniz gerekir. Aşağıdaki satırı</p>
 </div>
 </div>
 <div class="section" id="fonksiyonlar">
-<span id="index-14"></span><h2>7.20. Fonksiyonlar<a class="headerlink" href="#fonksiyonlar" title="Permalink to this headline">¶</a></h2>
+<span id="index-14"></span><h2>Fonksiyonlar<a class="headerlink" href="#fonksiyonlar" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Şimdiye kadar fonksiyonların faydalarını birkaç kere bahsettik. Bu faydaların
 tam olarak ne olduklarını merak ediyor olabilirsiniz. Bunlardan bazıları:</p>
 <ol class="arabic simple">
@@ -1104,7 +1104,7 @@ kullanabilirsiniz.</li>
 </ol>
 </div>
 <div class="section" id="ikili-veri">
-<h2>7.21. İkili veri<a class="headerlink" href="#ikili-veri" title="Permalink to this headline">¶</a></h2>
+<h2>İkili veri<a class="headerlink" href="#ikili-veri" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Python&#8217;da simlerden oluşan bir listeyle ve sayılardan oluşan bir listeyi önceden
 gördük. İleriki konularda bu konuya biraz daha değineceğiz ve verilerinizi
 temsil etmeninin ileri yöntemlerini göstereceğiz. İkili veri oluşturmak,
@@ -1157,7 +1157,7 @@ kullandık. Döngü üç kere yürütülür. Her bir yineleme için listedeki ç
 değişkene atanır.</p>
 </div>
 <div class="section" id="icice-gecmis-veriler-icin-icice-listeler">
-<span id="nested-data"></span><h2>7.22. İçiçe geçmiş veriler için içiçe listeler<a class="headerlink" href="#icice-gecmis-veriler-icin-icice-listeler" title="Permalink to this headline">¶</a></h2>
+<span id="nested-data"></span><h2>İçiçe geçmiş veriler için içiçe listeler<a class="headerlink" href="#icice-gecmis-veriler-icin-icice-listeler" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Yapılandırılmış veri listesi ile daha fazla haşır neşir olacağız. Aşağıdaki
 durumda elimizde bir öğrenci listesi var. Her bir öğrencinin ismi, öğrencilerin
 kayıt oldukları derslerden oluşan başka bir liste eşlenmiştir:</p>
@@ -1218,7 +1218,7 @@ film için  o filmde oynayan oyuncuların listesi olabilir. Böylece bu listeye 
 soruları sorabilirsiniz: &#8221; Angelina Jolie hangi filmlerde oynamıştır?&#8221;</p>
 </div>
 <div class="section" id="bir-sayinin-kare-kokunu-bulmak-icin-newton-yontemi">
-<span id="index-15"></span><h2>7.23. Bir sayının kare kökünü bulmak için Newton yöntemi<a class="headerlink" href="#bir-sayinin-kare-kokunu-bulmak-icin-newton-yontemi" title="Permalink to this headline">¶</a></h2>
+<span id="index-15"></span><h2>Bir sayının kare kökünü bulmak için Newton yöntemi<a class="headerlink" href="#bir-sayinin-kare-kokunu-bulmak-icin-newton-yontemi" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Döngüler sayısal hesaplamalarda sıklıkla kullanılır. Bu gibi hesaplamalarda bir
 yaklaşık tahminle başlanır ve bu tahmin yinelenerek geliştirilir.</p>
 <p>Örnek olarak, hesap makinaları ve bilgisayarlar olmadan önce insanlar bir
@@ -1303,7 +1303,7 @@ bakınız. Algoritma üzerinden adımlayarak ( hesap makinası kullanarak ) bu
 doğruluk derecesinin elde edilmesi için kaç yineleme gerektiğine bakınız.</p>
 </div>
 <div class="section" id="algoritmalar">
-<span id="index-16"></span><h2>7.24. Algoritmalar<a class="headerlink" href="#algoritmalar" title="Permalink to this headline">¶</a></h2>
+<span id="index-16"></span><h2>Algoritmalar<a class="headerlink" href="#algoritmalar" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Newton yöntemi bir algoritma örneğidir: Belli bir kategorideki (bu durumda kare
 kökleri hesaplama kategorisi) problemleri çözmeye yönelik mekanik bir süreçtir.</p>
 <p>Bazi bilgilerimiz algoritmik değildir. Örneğin tarihteki olayların zamanlarını
@@ -1320,7 +1320,7 @@ kadar tam olarak açıklıyamamaktadır. En azından bu işlemi bir algoritmik b
 yapmıyoruz.</p>
 </div>
 <div class="section" id="sozluk">
-<h2>7.25. Sözlük<a class="headerlink" href="#sozluk" title="Permalink to this headline">¶</a></h2>
+<h2>Sözlük<a class="headerlink" href="#sozluk" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <dl class="glossary docutils">
 <dt id="term-algoritma">algoritma</dt>
 <dd>Bir sınıf problemi adım adım çözme sürecidir.</dd>
@@ -1424,7 +1424,7 @@ değişimleri ve üretilen çıktıları kaydetme işlemidir.</dd>
 </dl>
 </div>
 <div class="section" id="alistirmalar">
-<h2>7.26. Alıştırmalar<a class="headerlink" href="#alistirmalar" title="Permalink to this headline">¶</a></h2>
+<h2>Alıştırmalar<a class="headerlink" href="#alistirmalar" title="Bu başlığın kalıcı bağlantısı">¶</a></h2>
 <p>Bu bölüm, bir listenin öğelerinin nasıl toplanacağını ve bu öğeleri nasıl
 sayacağımızı gösterdi. Sayma örneğimizde ayrıca <tt class="docutils literal"><span class="pre">if</span></tt> deyimi bize yalnızca bazı
 öğeleri saymamıza yardım etti. Daha önceki bölümde
@@ -1513,20 +1513,17 @@ düşünüyorsunuz.</p>
       <div class="clearer"></div>
     </div>
     <div class="related">
-      <h3>Navigation</h3>
+      <h3>Gezinti</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="fruitful_functions-tr.html" title="6. Ürün veren fonksiyonlar"
-             >previous</a> |</li>
+          <a href="genindex.html" title="Genel Dizin"
+             >dizin</a></li>
         <li><a href="index.html">How to Think Like a Computer Scientist: Learning with Python 3</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">
         &copy; Copyright 2012, Name prefix for templates and static dir [_].
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+      <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2 ile oluşturulmuştur.
     </div>
   </body>
 </html>
